@@ -8,6 +8,9 @@ inputs:
 outputs:
   result:
     description: 'The result of fargate command.'
+branding:
+  icon: "upload-cloud"
+  color: "orange"
 runs:
   using: 'docker'
   image: 'Dockerfile'
