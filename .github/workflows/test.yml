@@ -8,7 +8,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12.x
-      - uses: acro5piano/github-actions-fargatecli@maser
+      - uses: acro5piano/github-actions-fargatecli@master
         with:
           args: --version
 
