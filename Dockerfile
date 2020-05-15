@@ -1,7 +1,9 @@
 FROM alpine:3.10
 
-# Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
 
-# Code file to execute when the docker container starts up (`entrypoint.sh`)
+RUN wget https://github.com/awslabs/fargatecli/releases/download/0.3.2/fargate-0.3.2-linux-amd64.zip \
+    && unzip fargate-0.3.2-linux-amd64.zip \
+    && mv fargate /usr/bin/fargate
+
 ENTRYPOINT ["/entrypoint.sh"]
