@@ -10,6 +10,6 @@ RUN apt-get -yqq update && apt-get -yqq install wget unzip \
 
 # Verify
 RUN which fargate
-# RUN fargate --version
+RUN fargate --version
 
 ENTRYPOINT ["/entrypoint.sh"]
