@@ -3,6 +3,9 @@
 set -x
 
 which fargate
+echo $PATH
+/usr/bin/fargate --version
+fargate --version
 
 sh -c "echo $*"
 
