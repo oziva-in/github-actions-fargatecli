@@ -1,11 +1,13 @@
 #!/bin/sh -l
 
-set -ue
+sh -c "echo $*"
 
-which fargate
-
-echo "Hello $1"
-
-result=`fargate --version`
-
-echo "::set-output name=result::$result"
+# set -ue
+#
+# which fargate
+#
+# echo "Hello $1"
+#
+# result=`fargate --version`
+#
+# echo "::set-output name=result::$result"
