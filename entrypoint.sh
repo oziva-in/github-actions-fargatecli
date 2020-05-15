@@ -2,6 +2,8 @@
 
 set -ue
 
+ls -l
+
 echo "Hello $1"
 
 result=`fargate --version`
