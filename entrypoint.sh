@@ -1,5 +1,9 @@
 #!/bin/sh -l
 
+set -x
+
+which fargate
+
 sh -c "echo $*"
 
 # set -ue
