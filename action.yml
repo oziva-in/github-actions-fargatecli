@@ -1,0 +1,15 @@
+name: 'Fargate CLI'
+description: 'Fargate CLI'
+inputs:
+  args:
+    description: 'Arguments'
+    required: true
+    default: '--version'
+# outputs:
+#   result:
+#     description: 'The command result.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.args }}
