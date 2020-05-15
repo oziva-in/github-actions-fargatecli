@@ -7,6 +7,7 @@ RUN wget https://github.com/awslabs/fargatecli/releases/download/0.3.2/fargate-0
     && mv fargate /usr/bin/fargate
     && chmod +x /usr/bin/fargate
 
-fargate --version
+RUN fargate --version
+RUN which fargate
 
 ENTRYPOINT ["/entrypoint.sh"]

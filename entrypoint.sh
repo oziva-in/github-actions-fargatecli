@@ -2,9 +2,9 @@
 
 set -ue
 
-echo "Hello $1"
-
 which fargate
+
+echo "Hello $1"
 
 result=`fargate --version`
 

@@ -7,4 +7,3 @@ jobs:
       - uses: acro5piano/github-actions-fargatecli@master
         with:
           args: --version
-
