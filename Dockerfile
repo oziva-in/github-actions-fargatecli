@@ -1,4 +1,4 @@
-FROM alpine:3.11.5
+FROM debian:10.4-slim
 
 COPY entrypoint.sh /entrypoint.sh
 
