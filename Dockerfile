@@ -7,6 +7,10 @@ RUN wget https://github.com/awslabs/fargatecli/releases/download/0.3.2/fargate-0
     && mv fargate /usr/bin/fargate \
     && chmod +x /usr/bin/fargate
 
+
+# DEBUG
+RUN echo $PATH
+
 # Verify
 RUN which fargate
 RUN /usr/bin/fargate --version
