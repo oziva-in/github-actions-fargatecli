@@ -8,8 +8,6 @@ RUN apt-get -yqq update && apt-get -yqq install wget unzip \
     && mv fargate /usr/bin/fargate \
     && chmod +x /usr/bin/fargate
 
-# Verify
-RUN which fargate
 RUN fargate --version
 
 ENTRYPOINT ["/entrypoint.sh"]

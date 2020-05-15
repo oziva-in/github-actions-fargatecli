@@ -2,6 +2,8 @@
 
 set -ue
 
-result=`fargate --version`
+result=`fargate $@`
+
+echo $result
 
 echo "::set-output name=result::$result"
