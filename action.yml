@@ -5,9 +5,9 @@ inputs:
     description: 'Arguments'
     required: true
     default: '--version'
-# outputs:
-#   result:
-#     description: 'The command result.'
+outputs:
+  result:
+    description: 'The result of fargate command.'
 runs:
   using: 'docker'
   image: 'Dockerfile'

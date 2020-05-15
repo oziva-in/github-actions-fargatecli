@@ -2,9 +2,9 @@
 
 set -ue
 
-ls -l
-
 echo "Hello $1"
+
+which fargate
 
 result=`fargate --version`
 
